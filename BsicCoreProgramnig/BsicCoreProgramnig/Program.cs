@@ -10,7 +10,7 @@ namespace BsicCoreProgramnig
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Flip Coin\n2.Leap Year ");
+            Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power of two ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -21,6 +21,10 @@ namespace BsicCoreProgramnig
                 case 2:
                     LeapYear leap = new LeapYear();
                     leap.FindLeap();
+                    break;
+                case 3:
+                    Power power = new Power();
+                    power.FindPower();
                     break;
                 default:
                     Console.WriteLine("Please enter valid choice");
