@@ -10,7 +10,7 @@ namespace BsicCoreProgramnig
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power of two\n4.Harmonic ");
+            Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power of two\n4.Harmonic\n5. Factors ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -29,6 +29,10 @@ namespace BsicCoreProgramnig
                 case 4:
                     Harmonic harmonic = new Harmonic();
                     harmonic.FindHarmoic();
+                    break;
+                case 5:
+                    Factors factors = new Factors();
+                    factors.PrimeFactor();
                     break;
                 default:
                     Console.WriteLine("Please enter valid choice");
