@@ -10,7 +10,7 @@ namespace BsicCoreProgramnig
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power of two\n4.Harmonic\n5. Factors\n6.Sawp Two Number ");
+            Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power of two\n4.Harmonic\n5. Factors\n6.Sawp Two Number\n7. Check Number Even or Odd ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -37,6 +37,10 @@ namespace BsicCoreProgramnig
                 case 6:
                     SawpNumber sawpNumber = new SawpNumber();
                     sawpNumber.SwappingNumber();
+                    break;
+                case 7:
+                    EvenOrOdd evenOrOdd = new EvenOrOdd();
+                    evenOrOdd.CheckEvenOdd();
                     break;
                 default:
                     Console.WriteLine("Please enter valid choice");
