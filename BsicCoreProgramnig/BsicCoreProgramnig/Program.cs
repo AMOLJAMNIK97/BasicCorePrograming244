@@ -10,7 +10,7 @@ namespace BsicCoreProgramnig
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power of two\n4.Harmonic\n5. Factors\n6.Sawp Two Number\n7. Check Number Even or Odd\n8.Quotient Remainder");
+            Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power of two\n4.Harmonic\n5. Factors\n6.Sawp Two Number\n7. Check Number Even or Odd\n8.Quotient Remainder\n9.Largest three Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -45,6 +45,10 @@ namespace BsicCoreProgramnig
                 case 8:
                     QuotientRemainder remainder = new QuotientRemainder();
                     remainder.QuotRemain();
+                    break;
+                case 9:
+                    LargestNumber largest = new LargestNumber();
+                    largest.FindThreeNumber();
                     break;
                 default:
                     Console.WriteLine("Please enter valid choice");
