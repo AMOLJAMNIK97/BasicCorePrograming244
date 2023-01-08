@@ -10,7 +10,7 @@ namespace BsicCoreProgramnig
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power of two\n4.Harmonic\n5. Factors\n6.Sawp Two Number\n7. Check Number Even or Odd ");
+            Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power of two\n4.Harmonic\n5. Factors\n6.Sawp Two Number\n7. Check Number Even or Odd\n8.Quotient Remainder");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -41,6 +41,10 @@ namespace BsicCoreProgramnig
                 case 7:
                     EvenOrOdd evenOrOdd = new EvenOrOdd();
                     evenOrOdd.CheckEvenOdd();
+                    break;
+                case 8:
+                    QuotientRemainder remainder = new QuotientRemainder();
+                    remainder.QuotRemain();
                     break;
                 default:
                     Console.WriteLine("Please enter valid choice");
